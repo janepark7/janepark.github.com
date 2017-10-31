@@ -1,23 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Indie+Flower|Pacifico|Parisienne|Sacramento|Tangerine');
+
 body {
 	box-sizing: border-box;
 	margin: 0 auto;
 	background-color: #3EECAC;
-	background:linear-gradient(#7474bf, #348ac7) no-repeat fixed center;
+	background: linear-gradient(to bottom, #43c6ac, #191654) no-repeat fixed center;
 	color: #FFFFFF;
 }
 
-h1, h2 {
+.landing, .name, .role {
+	display: inline;
+}
+
+.home {
 	text-align: center;
-	font-weight: bold;
 }
 
-h1 {
-	font-size: 40px;
+h1, .home-link {
+	font-family: "Parisienne", sans-serif;
 }
 
-h2 {
-	font-size: 30px;
-	font-style: italic;
+h3 {
+	margin-left: 30px;
+}
+
+.role {
+	margin-left: 18px;
 }
 
 a:link {
@@ -34,4 +42,39 @@ a:hover {
 
 a:active {
 	text-decoration: none;
+}
+
+a.home-link {
+	font-size: 40px;
+}
+
+nav {
+	margin: 15px 15px 15px 15px;
+	/*positon: fixed;*/
+	box-sizing: inherit;
+	display: inline;
+}
+
+.navigation .nav-items {
+	float: right;
+	/*margin: 10px 0;*/
+}
+
+.nav-items {
+	margin: 10px 10px 10px 10px;
+}
+
+.jane {
+	width: 20%;
+	float: left;
+	margin: 5px 15px 5px 25px;
+}
+
+.bio {
+	margin: 10px 10px 10px 10px;
+	width: 90%;
+}
+
+.contact-info {
+	display: inline;
 }
