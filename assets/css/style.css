@@ -63,3 +63,7 @@ nav {
 .contact-info {
 	display: inline;
 }
+
+.bio {
+	margin: 20px 35px 40px 35px;
+}
