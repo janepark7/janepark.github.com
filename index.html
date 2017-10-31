@@ -2,21 +2,61 @@
 <html>
 	<head>
 		<title>Jane Park</title>
-		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
-		<!-- <link rel="stylesheet" type="text/css" href="./css/cssreset.css"/> -->
-		<script src="./scripts/scripts.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/cssreset.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	</head>
 		<body>
-			<h1>Jane Park</h1>
-			<h2>Web Developer / Designer</h2>
+			<nav class="navigation" id="#navbar">
+				<a href="#main" class="home-link" style="display: inline;">Jane Park</a>
+				<div class="nav-items" id="#navitems">
+					<a class="aboutMe" href="#aboutMe">About Me</a>
+						<a class="projects" href="#projects">Projects</a>
+							<a class="contact" href="#contact">Contact</a>
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+					</div>
+			</nav>
+				<section class="landing">
+					<div class="home">
+					<h1 class="name">Jane Park</h1>
+					<h2 class="role">Web Developer / Designer</h2>
+					</div>
+				</section>
 
-			<div class="navbar" id="myNavBar">
+				<div class="aboutMe" id="aboutMe">
+					<h3 class="girl">About Me</h3>
+						<img class="jane" src="assets/images/jane.jpg"/>
+						<p class="bio">
+						Hi, I'm Jane! I was in the Hospitality industry working in the Pastry Department for many years before diving into the world of code.
+						I feel like both worlds are no different from one another, except having a sweet treat after your done baking that you can eat. You have a sweet functioning webpage or app to display all of your work to make your life convenient...well, hey, that's the end goal at least!
+						</p>
+						<p class="bio2">
+						I love creating things from the ground up. It's so exciting to see a product that you started from the beginning turn into something that go beyond your expectations!
+						I created my first webpage when I was in high school by creating fan pages for my favorite bands.
+						Recently, I graduated at <a href="http://www.nycda.com">New York Code and Design Academy's</a> Web Development Intensive program. I have learned that creating webpages and apps can go beyond simple HTML (and hosting them on Angelfire).
+						</p>
+				</div>
 
-					<a href="#aboutMe">About Me</a>
-					<a href="#projects">Projects</a>
-					<a href="#contact">Contact</a>
-			</div>
+					<section class="projects" id="projects">
+						<h3>Projects</h3>
+						<ul>
+							<li><a href="http://photoproject.herokuapp.com">Photomatic</a></li>
+							<li><a href="https://watchthisstore.herokuapp.com/">Watch This</a></li>
+						</ul>
+					</section>
 
-			
+					<section class="contact" id="contact">
+						<h3>Let's Work Together</h3>
+						<ul class="contact-info">
+							<li><a href="mailto:janeparkjp@gmail.com">Email Me</a>
+							<li><a href="https://github.com/janepark7">Github</a>
+							<li><a href="https://www.linkedin.com/in/jane-park-7aa208132/">Linkedin</a>
+							<li>Resume
+						</ul>
+					</section>
+
+
+				<script src="./scripts/scripts.js"></script>
 		</body>
 </html>

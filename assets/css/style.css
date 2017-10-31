@@ -3,8 +3,6 @@
 body {
 	box-sizing: border-box;
 	margin: 0 auto;
-	background: linear-gradient(#206982, #181818) no-repeat fixed center;
-	color: #E3DBD4;
 	background-color: #3EECAC;
 	background: linear-gradient(to bottom, #43c6ac, #191654) no-repeat fixed center;
 	color: #FFFFFF;
@@ -22,8 +20,13 @@ h1, .home-link {
 	font-family: "Parisienne", sans-serif;
 }
 
-h3 {
-	margin-left: 30px;
+.girl {
+	margin-left: -15px;
+	transform: rotateY(50px);
+	position: absolute;
+	letter-spacing: 1px;
+	font-size: 30px;
+	transform: rotate(270deg);
 }
 
 .role {
@@ -69,12 +72,17 @@ nav {
 .jane {
 	width: 20%;
 	float: left;
-	margin: 5px 15px 5px 45px;
+	margin: 5px 15px 5px 195px;
 }
 
 .bio {
-	margin: 30px 30px 30px 85px;
-	width: 90%;
+	margin: 55px 30px 30px 70px;
+	width: 76%;
+}
+
+.bio2 {
+	margin: 20px 30px 30px 70px;
+	width: 76%;
 }
 
 .contact-info {
