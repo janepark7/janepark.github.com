@@ -20,18 +20,48 @@ h1, .home-link {
 	font-family: "Parisienne", sans-serif;
 }
 
+/*~*~*~ About Me *~*~*~*/
+
+.about-me {
+	width: 80%;
+}
+
 .girl {
-	margin-left: -15px;
+	/*margin-left: -15px;
 	transform: rotateY(50px);
-	position: absolute;
+	position: absolute;*/
 	letter-spacing: 1px;
 	font-size: 30px;
-	transform: rotate(270deg);
+	/*transform: rotate(270deg);*/
 }
 
 .role {
 	margin-left: 18px;
 }
+
+
+.jane {
+	width: 20%;
+	float: left;
+	/*margin: 5px 15px 5px 195px;*/
+}
+
+.bio, .bio2 {
+	/*margin: 20px 30px 30px 70px;*/
+	/*width: 80%;*/
+}
+
+.bio {
+
+}
+
+.bio2 {
+	/*margin: 20px 30px 30px 70px;*/
+	/*width: 80%;*/
+}
+
+
+/*~*~*~ Navigation Bar ~*~*~*/
 
 a:link {
 	text-decoration: none;
@@ -41,7 +71,7 @@ a:visited {
 	text-decoration: none;
 }
 
-a:hover {
+.nav-items a:hover {
 	text-decoration: none;
 }
 
@@ -51,6 +81,7 @@ a:active {
 
 a.home-link {
 	font-size: 40px;
+	display: inline;
 }
 
 nav {
@@ -60,30 +91,46 @@ nav {
 	display: inline;
 }
 
-.navigation .nav-items {
+.navigation {
+	overflow: hidden;
+}
+
+.nav-items {
 	float: right;
 	/*margin: 10px 0;*/
 }
 
-.nav-items {
+.navigation {
 	margin: 10px 10px 10px 10px;
 }
 
-.jane {
-	width: 20%;
-	float: left;
-	margin: 5px 15px 5px 195px;
+.navigation .icon {
+	display: none;
 }
 
-.bio {
-	margin: 55px 30px 30px 70px;
-	width: 76%;
+@media screen and (max-width: 600px) {
+	/*.navigation a:not(:first-child) {display: none;}*/
+	.navigation a.icon {
+		float: right;
+		display: block;
+	}
 }
 
-.bio2 {
-	margin: 20px 30px 30px 70px;
-	width: 76%;
+@media screen and (max-width: 600px) {
+	.navigation.responsive {position: relative}
+	.navigation.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navigation.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
 }
+
+/*~*~ Contact *~*~*/
 
 .contact-info {
 	display: inline;
