@@ -1,12 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Indie+Flower|Pacifico|Parisienne|Sacramento|Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Dosis');
 
 body {
 	box-sizing: border-box;
-	margin: 0 auto;
+	/*margin-right: 85px;
+	margin-left: 85px;*/
 	background-color: #3EECAC;
 	background: linear-gradient(to bottom, #43c6ac, #191654) no-repeat fixed center;
 	color: #FFFFFF;
 }
+
+a {
+	color: #e6e6e6;
+}
+
+/*
+=== Controlled Margins on divs ==
+*/
+
+.about-me, .projects, .contact {
+	margin: 20px 95px 20px 100px;
+}
+
+/*
+=== Landing Page ===
+*/
 
 .landing, .name, .role {
 	display: inline;
@@ -14,34 +31,37 @@ body {
 
 .home {
 	text-align: center;
+	/*width: 88%;*/
+	margin: 200px 55px 200px 55px;
 }
 
 h1, .home-link {
 	font-family: "Parisienne", sans-serif;
 }
 
-.girl {
-	margin-left: -15px;
-	transform: rotateY(50px);
-	position: absolute;
-	letter-spacing: 1px;
-	font-size: 30px;
-	transform: rotate(270deg);
+.role {
+	font-style: italic;
+	font-size: 27px;
 }
 
-.role {
-	margin-left: 18px;
+/*
+==== Navigation Bar ====
+*/
+
+#navbar {
+	color: #e6e6e6;
 }
 
 a:link {
 	text-decoration: none;
+	color: #e6e6e6;
 }
 
 a:visited {
 	text-decoration: none;
 }
 
-a:hover {
+.nav-items a:hover {
 	text-decoration: none;
 }
 
@@ -49,41 +69,128 @@ a:active {
 	text-decoration: none;
 }
 
-a.home-link {
+.home-link {
 	font-size: 40px;
+	display: inline;
+	padding-top: 20px;
+	padding-left: 38px;
+}
+
+a.aboutme, a.projects, a.contact {
+	text-transform: uppercase;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 nav {
-	margin: 15px 15px 15px 15px;
-	/*positon: fixed;*/
 	box-sizing: inherit;
 	display: inline;
-}
-
-.navigation .nav-items {
-	float: right;
-	/*margin: 10px 0;*/
+	position: fixed;
 }
 
 .nav-items {
-	margin: 10px 10px 10px 10px;
+	float: right;
+	padding-top: 18px;
+	padding-right: 10px;
+	/*margin: 10px 0;*/
+}
+
+.navigation {
+	/*margin: 0 38px 30px 0;*/
+	padding-top: 10px;
+	padding-bottom: 8px;
+	overflow: hidden;
+	top: 0;
+	background-color: #43c6ac; opacity: 0.9;
+	width: 100%;
+}
+
+.navigation .icon {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	/*.navigation a:not(:first-child) {display: none;}*/
+	.navigation a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.navigation.responsive {position: relative}
+	.navigation.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navigation.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+/*
+====== About Me ======
+*/
+
+.about-me {
+	margin: 150px 0 150px 0;
+}
+
+h3 {
+	margin-left: 42px;
+	letter-spacing: 1px;
+	font-size: 30px;
+}
+
+.role {
+	margin-left: 18px;
 }
 
 .jane {
-	width: 20%;
+	width: 15%;
 	float: left;
-	margin: 5px 15px 5px 195px;
+	margin: 5px 25px 5px 45px;
 }
 
-.bio {
-	margin: 55px 30px 30px 70px;
-	width: 76%;
+.bio, .bio2 {
+	margin-right: 58px;
 }
+
+/*.bio {
+	margin: 0 30px 30px 70px;
+}*/
 
 .bio2 {
-	margin: 20px 30px 30px 70px;
-	width: 76%;
+	/*margin: 20px 30px 30px 70px;*/
+	/*width: 80%;*/
 }
+
+.text-bio {
+	/*width: 77%;*/
+	font-size: 18px;
+	margin: 13px 10px 65px 10px;
+}
+
+.code-skills {
+	display: inline;
+}
+
+img.code {
+	width: 8%;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.img-container {
+	margin-left: 85px;
+}
+
+/*
+==== Contact ====
+*/
 
 .contact-info {
 	display: inline;
