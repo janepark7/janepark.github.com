@@ -14,39 +14,41 @@ a {
 }
 
 /*
-=== Controlled Margins on divs ==
-*/
-
-.about-me, .projects, .contact {
-	margin: 20px 95px 20px 100px;
-}
-
-/*
 === Landing Page ===
 */
 
-.landing, .name, .role {
+.landing, .name {
 	display: inline;
 }
 
-.home {
-	text-align: center;
-	/*width: 88%;*/
-	margin: 200px 55px 200px 55px;
+.cake, .code {
+	padding-right: 18px;
+	padding-left: 18px;
 }
 
-h1, .home-link {
-	font-family: "Parisienne", sans-serif;
+h1.name {
+	font-size: 45px;
 }
 
 .role {
 	font-style: italic;
 	font-size: 27px;
+	padding-top: 8px;
+}
+
+.home {
+	text-align: center;
+	/*width: 88%;*/
+	margin: 310px 55px 380px 55px;
 }
 
 /*
 ==== Navigation Bar ====
 */
+
+h1, .home-link {
+	font-family: "Parisienne", sans-serif;
+}
 
 #navbar {
 	color: #e6e6e6;
@@ -78,8 +80,8 @@ a:active {
 
 a.aboutme, a.projects, a.contact {
 	text-transform: uppercase;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 nav {
@@ -92,16 +94,14 @@ nav {
 	float: right;
 	padding-top: 18px;
 	padding-right: 10px;
-	/*margin: 10px 0;*/
 }
 
 .navigation {
-	/*margin: 0 38px 30px 0;*/
 	padding-top: 10px;
 	padding-bottom: 8px;
 	overflow: hidden;
 	top: 0;
-	background-color: #43c6ac; opacity: 0.9;
+	background-color: #43c6ac; opacity: 0.8;
 	width: 100%;
 }
 
@@ -109,48 +109,24 @@ nav {
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
-	/*.navigation a:not(:first-child) {display: none;}*/
-	.navigation a.icon {
-		float: right;
-		display: block;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.navigation.responsive {position: relative}
-	.navigation.responsive .icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	.navigation.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-	}
-}
 
 /*
 ====== About Me ======
 */
 
 .about-me {
-	margin: 150px 0 150px 0;
+	margin: 120px 0 100px 0;
 }
 
-h3 {
-	margin-left: 42px;
+h3.about-me-head, h3.skills-head {
+	/*margin-left: 42px;*/
 	letter-spacing: 1px;
 	font-size: 30px;
-}
-
-.role {
-	margin-left: 18px;
+	padding-bottom: 20px;
 }
 
 .jane {
-	width: 15%;
+	width: 22%;
 	float: left;
 	margin: 5px 25px 5px 45px;
 }
@@ -159,39 +135,56 @@ h3 {
 	margin-right: 58px;
 }
 
-/*.bio {
-	margin: 0 30px 30px 70px;
-}*/
-
-.bio2 {
-	/*margin: 20px 30px 30px 70px;*/
-	/*width: 80%;*/
-}
-
 .text-bio {
-	/*width: 77%;*/
 	font-size: 18px;
-	margin: 13px 10px 65px 10px;
+	margin: 20px 10px 20px 10px;
 }
+
+h3
 
 .code-skills {
 	display: inline;
 }
 
-img.code {
-	width: 8%;
-	padding-left: 8px;
-	padding-right: 8px;
-}
-
 .img-container {
 	margin-left: 85px;
+	padding-left: 11px;
 }
+
+.html, .css, .js,
+.jq, .node, .react {
+	width: 11%;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+/*
+==== Projects ====
+*/
+
+.projects {
+
+}
+
+.photomatic, .watchthis {
+	width: 38%;
+}
+
+.project-head {
+	font-size: 28px;
+}
+
 
 /*
 ==== Contact ====
 */
 
-.contact-info {
+.icons {
+	width: 6%;
+	padding-left: 18px;
+}
+
+ul.contact-info li {
 	display: inline;
+	padding: left
 }
