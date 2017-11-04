@@ -1,47 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Indie+Flower|Pacifico|Parisienne|Sacramento|Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Dosis');
 
 body {
 	box-sizing: border-box;
-	margin: 0 auto;
+	/*margin-right: 85px;
+	margin-left: 85px;*/
 	background-color: #3EECAC;
 	background: linear-gradient(to bottom, #43c6ac, #191654) no-repeat fixed center;
 	color: #FFFFFF;
 }
 
-.landing, .name, .role {
+a {
+	color: #e6e6e6;
+}
+
+/*
+=== Landing Page ===
+*/
+
+.landing, .name {
 	display: inline;
+}
+
+.cake, .code {
+	padding-right: 18px;
+	padding-left: 18px;
+}
+
+h1.name {
+	font-size: 45px;
+}
+
+.role {
+	font-style: italic;
+	font-size: 27px;
+	padding-top: 8px;
 }
 
 .home {
 	text-align: center;
+	/*width: 88%;*/
+	margin: 310px 55px 380px 55px;
 }
+
+/*
+==== Navigation Bar ====
+*/
 
 h1, .home-link {
 	font-family: "Parisienne", sans-serif;
 }
 
-.girl {
-	margin-left: -15px;
-	transform: rotateY(50px);
-	position: absolute;
-	letter-spacing: 1px;
-	font-size: 30px;
-	transform: rotate(270deg);
-}
-
-.role {
-	margin-left: 18px;
+#navbar {
+	color: #e6e6e6;
 }
 
 a:link {
 	text-decoration: none;
+	color: #e6e6e6;
 }
 
 a:visited {
 	text-decoration: none;
 }
 
-a:hover {
+.nav-items a:hover {
 	text-decoration: none;
 }
 
@@ -49,42 +71,120 @@ a:active {
 	text-decoration: none;
 }
 
-a.home-link {
+.home-link {
 	font-size: 40px;
+	display: inline;
+	padding-top: 20px;
+	padding-left: 38px;
+}
+
+a.aboutme, a.projects, a.contact {
+	text-transform: uppercase;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 nav {
-	margin: 15px 15px 15px 15px;
-	/*positon: fixed;*/
 	box-sizing: inherit;
 	display: inline;
-}
-
-.navigation .nav-items {
-	float: right;
-	/*margin: 10px 0;*/
+	position: fixed;
 }
 
 .nav-items {
-	margin: 10px 10px 10px 10px;
+	float: right;
+	padding-top: 18px;
+	padding-right: 10px;
+}
+
+.navigation {
+	padding-top: 10px;
+	padding-bottom: 8px;
+	overflow: hidden;
+	top: 0;
+	background-color: #43c6ac; opacity: 0.8;
+	width: 100%;
+}
+
+.navigation .icon {
+	display: none;
+}
+
+
+/*
+====== About Me ======
+*/
+
+.about-me {
+	margin: 120px 0 100px 0;
+}
+
+h3.about-me-head, h3.skills-head {
+	/*margin-left: 42px;*/
+	letter-spacing: 1px;
+	font-size: 30px;
+	padding-bottom: 20px;
 }
 
 .jane {
-	width: 20%;
+	width: 22%;
 	float: left;
-	margin: 5px 15px 5px 195px;
+	margin: 5px 25px 5px 45px;
 }
 
-.bio {
-	margin: 55px 30px 30px 70px;
-	width: 76%;
+.bio, .bio2 {
+	margin-right: 58px;
 }
 
-.bio2 {
-	margin: 20px 30px 30px 70px;
-	width: 76%;
+.text-bio {
+	font-size: 18px;
+	margin: 20px 10px 20px 10px;
 }
 
-.contact-info {
+h3
+
+.code-skills {
 	display: inline;
+}
+
+.img-container {
+	margin-left: 85px;
+	padding-left: 11px;
+}
+
+.html, .css, .js,
+.jq, .node, .react {
+	width: 11%;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+/*
+==== Projects ====
+*/
+
+.projects {
+
+}
+
+.photomatic, .watchthis {
+	width: 38%;
+}
+
+.project-head {
+	font-size: 28px;
+}
+
+
+/*
+==== Contact ====
+*/
+
+.icons {
+	width: 6%;
+	padding-left: 18px;
+}
+
+ul.contact-info li {
+	display: inline;
+	padding: left
 }
