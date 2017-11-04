@@ -3,6 +3,8 @@
 body {
 	box-sizing: border-box;
 	margin: 0 auto;
+	background: linear-gradient(#206982, #181818) no-repeat fixed center;
+	color: #E3DBD4;
 	background-color: #3EECAC;
 	background: linear-gradient(to bottom, #43c6ac, #191654) no-repeat fixed center;
 	color: #FFFFFF;
