@@ -165,6 +165,7 @@ ul.assignments {
 .work-display {
 	padding-top: 45px;
 	padding-bottom: 55px;
+	margin: 0 auto;
 	background: linear-gradient(to top, #2b5876, #4e4376) no-repeat fixed center;
 }
 
