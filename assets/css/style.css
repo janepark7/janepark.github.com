@@ -16,12 +16,13 @@ body {
 }
 
 .cake, .code {
-	padding-right: 18px;
-	padding-left: 18px;
+	padding-right: 35px;
+	padding-left: 35px;
 }
 
 h1.name {
-	font-size: 45px;
+	padding-bottom: 15px;
+	font-size: 55px;
 }
 
 .role {
@@ -45,14 +46,17 @@ nav.navigation {
 		padding-bottom: 8px;
 		overflow: hidden;
 		top: 0;
-		background-color: #43c6ac; opacity: 0.8;
+		background-color: #43c6ac;
+		opacity: 0.8;
 		width: 100%;
 		position: fixed;
-		z-index: 100;
+		/*z-index: 100;*/
 }
 
 nav.navigation a {
 	color: 	#F0F8FF;
+	/*color: #FFFF00;*/
+	/*opacity: 0;*/
 }
 
 h1, .home-link {
@@ -62,14 +66,17 @@ h1, .home-link {
 a:link {
 	text-decoration: none;
 	color: #e6e6e6;
+	/*opacity: 0;*/
 }
 
 a:visited {
 	text-decoration: none;
+	color: #ffffe5;
 }
 
 .nav-items a:hover {
 	text-decoration: none;
+	color: #ccccff;
 }
 
 a:active {
@@ -141,15 +148,17 @@ h3.about-me-head, h3.skills-head {
 }
 
 .img-container {
-	margin-left: 200px;
+	/*margin-left: 200px;*/
 	/*margin: 0 auto;*/
-	padding-left: 11px;
-	padding-bottom: 30px;
+	/*padding-left: 11px;
+	padding-bottom: 30px;*/
+	max-width: 800px;
+  margin: auto;
 }
 
 .html, .css, .js,
 .jq, .node, .react {
-	width: 11%;
+	width: 13%;
 	padding-left: 12px;
 	padding-right: 12px;
 }
@@ -158,10 +167,6 @@ h3.about-me-head, h3.skills-head {
 ==== Projects ====
 */
 
-ul.assignments {
-
-}
-
 .work-display {
 	padding-top: 45px;
 	padding-bottom: 55px;
@@ -169,8 +174,15 @@ ul.assignments {
 	background: linear-gradient(to top, #2b5876, #4e4376) no-repeat fixed center;
 }
 
+.photo-proj, .watch-proj {
+	max-width: 800px;
+  margin: auto;
+}
+
 .photomatic, .watchthis {
 	width: 38%;
+	display: block;
+	margin: auto;
 }
 
 .project-head {
@@ -181,8 +193,12 @@ ul.assignments {
 	font-size: 20px;
 	padding-top: 17px;
 	padding-bottom: 17px;
+	text-align: center;
 }
 
+.photo-details, .watch-details {
+	padding-top: 25px;
+}
 
 /*
 ==== Contact ====
@@ -191,12 +207,23 @@ ul.assignments {
 .contacts {
 	/*margin-top: 40%;
 	margin-bottom: 40%;*/
-	padding-top: 300px;
+	padding-top: 270px;
 	padding-bottom: 300px;
 	background: linear-gradient(to bottom, #005c97, #363795) no-repeat fixed center;
+	font-size: 18px;
+}
+
+.contact-title {
+	padding-bottom: 35px;
 }
 
 .icons {
-	width: 6%;
-	padding-left: 18px;
+	/*width: 10%;*/
+	padding-left: 30px;
+}
+
+.contact-info {
+	padding-top: 25px;
+	max-width: 770px;
+	margin: auto;
 }
