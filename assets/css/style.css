@@ -2,15 +2,9 @@
 
 body {
 	box-sizing: border-box;
-	/*margin-right: 85px;
-	margin-left: 85px;*/
 	background-color: #3EECAC;
 	background: linear-gradient(to bottom, #43c6ac, #191654) no-repeat fixed center;
 	color: #FFFFFF;
-}
-
-a {
-	color: #e6e6e6;
 }
 
 /*
@@ -38,20 +32,31 @@ h1.name {
 
 .home {
 	text-align: center;
-	/*width: 88%;*/
-	margin: 310px 55px 380px 55px;
+	margin-top: 30%;
+	margin-bottom: 45%;
 }
 
 /*
 ==== Navigation Bar ====
 */
 
-h1, .home-link {
-	font-family: "Parisienne", sans-serif;
+nav.navigation {
+		padding-top: 10px;
+		padding-bottom: 8px;
+		overflow: hidden;
+		top: 0;
+		background-color: #43c6ac; opacity: 0.8;
+		width: 100%;
+		position: fixed;
+		z-index: 100;
 }
 
-#navbar {
-	color: #e6e6e6;
+nav.navigation a {
+	color: 	#F0F8FF;
+}
+
+h1, .home-link {
+	font-family: "Parisienne", sans-serif;
 }
 
 a:link {
@@ -84,26 +89,13 @@ a.aboutme, a.projects, a.contact {
 	padding-right: 5px;
 }
 
-nav {
-	box-sizing: inherit;
-	display: inline;
-	position: fixed;
-}
-
 .nav-items {
 	float: right;
 	padding-top: 18px;
 	padding-right: 10px;
 }
 
-.navigation {
-	padding-top: 10px;
-	padding-bottom: 8px;
-	overflow: hidden;
-	top: 0;
-	background-color: #43c6ac; opacity: 0.8;
-	width: 100%;
-}
+
 
 .navigation .icon {
 	display: none;
@@ -115,13 +107,17 @@ nav {
 */
 
 .about-me {
-	margin: 120px 0 100px 0;
+	margin-top: 45%;
+	background: linear-gradient(to top, #4b6cb7, #182848) no-repeat fixed center;
+	padding-top: 68px;
+	padding-bottom: 68px;
 }
 
 h3.about-me-head, h3.skills-head {
 	/*margin-left: 42px;*/
 	letter-spacing: 1px;
 	font-size: 30px;
+	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
@@ -140,15 +136,15 @@ h3.about-me-head, h3.skills-head {
 	margin: 20px 10px 20px 10px;
 }
 
-h3
-
 .code-skills {
 	display: inline;
 }
 
 .img-container {
-	margin-left: 85px;
+	margin-left: 200px;
+	/*margin: 0 auto;*/
 	padding-left: 11px;
+	padding-bottom: 30px;
 }
 
 .html, .css, .js,
@@ -162,8 +158,14 @@ h3
 ==== Projects ====
 */
 
-.projects {
+ul.assignments {
 
+}
+
+.work-display {
+	padding-top: 45px;
+	padding-bottom: 55px;
+	background: linear-gradient(to top, #2b5876, #4e4376) no-repeat fixed center;
 }
 
 .photomatic, .watchthis {
@@ -174,17 +176,26 @@ h3
 	font-size: 28px;
 }
 
+.proj-title {
+	font-size: 20px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+
 
 /*
 ==== Contact ====
 */
 
+.contacts {
+	/*margin-top: 40%;
+	margin-bottom: 40%;*/
+	padding-top: 300px;
+	padding-bottom: 300px;
+	background: linear-gradient(to bottom, #005c97, #363795) no-repeat fixed center;
+}
+
 .icons {
 	width: 6%;
 	padding-left: 18px;
-}
-
-ul.contact-info li {
-	display: inline;
-	padding: left
 }
